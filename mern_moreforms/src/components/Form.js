@@ -30,7 +30,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={submitHandler} className=" border ">
+    <form onSubmit={submitHandler} className=" border bg-secondary ">
       {/* onSubmit={submitHandler} connects to const submitHandler and activates */}
       <div className="form-group mb-3">
         <label>First Name:</label>
@@ -98,7 +98,7 @@ const Form = () => {
         ) : null}
       </div>
       <div className="form-group mb-3">
-        <button>Add Person</button>
+        <button className="btn btn-info">Add Person</button>
       </div>
     </form>
   );
