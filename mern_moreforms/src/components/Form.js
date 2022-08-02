@@ -8,7 +8,7 @@ const Form = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const submitHandler = (e) => {
-    // never want to refresh page in react so
+    // never want to refresh page in react so e.preventDefault();
     e.preventDefault();
     if (firstName && lastName && email && password && confirmPassword) {
       console.log({
